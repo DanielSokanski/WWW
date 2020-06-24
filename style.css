@@ -1,7 +1,7 @@
 body
 {
-	font-family: 'Lato', sans-serif;
-	background-color:#A9A9A9;
+	font-family: 'Lobster', cursive;
+	background-color:#b39484;
 	color: white;
 }
 .container
@@ -9,6 +9,18 @@ body
 	text-align:center;
 	width:100%;
 	font-size:42px;
+}
+#bilansContainer
+{
+	text-align:center;
+	width:100%;
+	font-size:30px;
+}
+#bilansContainer p
+{
+	text-align:center;
+	width:100%;
+	font-size:20px;
 }
 .container .logo p
 {
@@ -28,35 +40,12 @@ body
 {
 	padding:50px;
 	margin-top:10px;
-	border:1px solid #ffffff;
 	text-align:center;
 	width:250px;
-	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	height:394px;
 	float:left;
 }
 
-#register
-{
-	
-	padding-left:50px;
-	padding-right:50px;
-	padding-bottom:52px;
-	padding-top:25px;
-	margin-top:10px;
-	border:1px solid #ffffff;
-	text-align:center;
-	width:250px;
-	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	float:left;
-}
-#register p
-{
-	font-size:24px;
-}
 #loginandregister
 {
 	margin-left:auto;
@@ -85,8 +74,22 @@ input[type=submit]:focus
 	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 }
+.timeperiod input[type=submit]
+{
+	width: 120px;
+	background-color: #36b03c;
+	font-size:14px;
+	color: white;
+	margin-top: 2px;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
 input[type=text],
-input[type=password]
+input[type=password],
+input[type=email]
 {
 	background-color: #efefef;
 	color: #666;
@@ -116,14 +119,55 @@ input[type=reset]:focus
 	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 }
+.registerlabels input[type=submit]
+{
+	width: 150px;
+	background-color: #36b03c;
+	font-size:14px;
+	color: white;
+	padding: 20px 10px;
+	margin-top: 5px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	display:inline-block;
+}
+.registerlabels input[type=submit]:hover
+{
+	background-color: #25a02b;
+}
+.registerlabels input[type=reset]
+{
+	width: 150px;
+	background-color: #b37366;
+	font-size:14px;
+	color: white;
+	padding: 20px 10px;
+	margin-top: 5px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	display:inline-block;
+}
+.registerlabels input[type=reset]:hover
+{
+	background-color: #a26255;
+}
+legend
+{
+	font-size:32px;
+}
 .userdata
 {
-	margin-left:auto;
-	margin-right:auto;
-	width:704px;
-	height:120px;
+	padding:50px;
+	margin-top:10px;
 	text-align:center;
-	font-size:20px;
+	width:250px;
+	float:left;
 }
 .registerlabels
 {
@@ -154,4 +198,305 @@ input[type=reset]:focus
 .registerlabels
 {
 	font-size:20px;
+}
+.mainmenu
+{
+	margin-top:50px;
+	width:1250px;
+	margin-left:auto;
+	margin-right:auto;
+	height:250px;
+}
+.mainmenu > legend
+{
+	width:100%;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:42px;
+}
+.tile1
+{
+	display:inline-block;
+	margin:10px;
+	width:220px;
+	height:142px;
+	background-color:#93c748;
+	text-align:center;
+	border-radius:5px;
+	border:2px solid #82b637;
+}
+.mainmenu .tile1 a
+{
+	text-decoration:none;
+	font-size:24px;
+	color:white;
+}
+.tile1:hover
+{
+	background-color:#82b637;
+}
+.tile2
+{
+	display:inline-block;
+	margin:10px;
+	width:220px;
+	height:142px;
+	background-color:#444444;
+	text-align:center;
+	border-radius:5px;
+	border:2px solid #333333;
+}
+.tile2:hover
+{
+	background-color:#333333;
+}
+.mainmenu .tile2 a
+{
+	text-decoration:none;
+	font-size:24px;
+	color:white;
+}
+.tile3
+{
+	display:inline-block;
+	margin:10px;
+	width:220px;
+	height:142px;
+	background-color:#3095d3;
+	text-align:center;
+	border-radius:5px;
+	border:2px solid #2084c2;
+}
+.tile3:hover
+{
+	background-color:#2084c2;
+}
+.mainmenu .tile3 a
+{
+	text-decoration:none;
+	font-size:24px;
+	color:white;
+}
+.tile4
+{
+	display:inline-block;
+	margin:10px;
+	width:220px;
+	height:142px;
+	background-color:#bac2be;
+	text-align:center;
+	border-radius:5px;
+	border:2px solid #aab1ad;
+}
+.tile4:hover
+{
+	background-color:#aab1ad;
+}
+.mainmenu .tile4 a
+{
+	text-decoration:none;
+	font-size:24px;
+	color:white;
+}
+.tile5
+{
+	display:inline-block;
+	width:220px;
+	height:142px;
+	background-color:#d95333;
+	text-align:center;
+	border-radius:5px;
+	border:2px solid #c84222;
+}
+.tile5:hover
+{
+	background-color:#c84222;
+}
+.mainmenu .tile5 a
+{
+	text-decoration:none;
+	font-size:24px;
+	color:white;
+}
+.changedata
+{
+	width:100%;
+	height:150px;
+}
+.changedata input[type=submit]
+{
+	width: 100px;
+	background-color: #871020;
+	font-size:14px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 3px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+.changedata input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+#changeName,
+#changeSurname,
+#changePassword,
+#changeEmail
+{
+	display:inline-block;
+	width:200px;
+	height:65px;
+	text-align:center;
+	border-right: 2px solid #ddd;
+}
+#changeName
+{
+	border-left: 2px solid #ddd;
+}
+#settings
+{
+	width:100%;
+	text-align:center;
+}
+#edit
+{
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+#editIncomesContainer
+{
+	display:inline-block;
+	width:500px;
+	border-right:2px solid white;
+	margin-bottom:20px;
+}
+#editExpencesContainer
+{
+	display:inline-block;
+	width:500px;
+	margin-bottom:20px;
+}
+#edit input[type=submit]
+{
+	width: 100px;
+	background-color: #871020;
+	font-size:14px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 3px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+#edit input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+.eraseRecords
+{
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+#eraseIncomes
+{
+	display:inline-block;
+	width:500px;
+	border-right:2px solid white;
+	margin-bottom:20px;
+}
+#eraseExpences
+{
+	display:inline-block;
+	width:500px;
+	margin-bottom:20px;
+}
+.eraseRecords input[type=submit]
+{
+	width: 100px;
+	background-color: #871020;
+	font-size:14px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 3px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+.eraseRecords input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+.value
+{
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:20px;
+	margin-bottom:20px;
+}
+.date
+{
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:20px;
+	margin-bottom:50px;
+}
+.payment
+{
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:20px;
+}
+.payment legend
+{
+		font-size:20px;
+}
+.category
+{
+	margin-top:20px;
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:20px;
+}
+.komentarz
+{
+	margin-top:20px;
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:20px;
+}
+legend
+{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
 }

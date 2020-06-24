@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Domowy Budżet</title>
+	<meta name="description" content="Aplikacja do zarządzania domowym budżetem">
+	<meta name="keywords" content="budżet, wydatek, przychód, bilans">
+	<meta name="author" content="Daniel Sokanski">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/fontello.css"type="text/css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<h1> BUDŻET DOMOWY </h1>
+				<p> Kompleksowo zarządzaj swoim budżetem domowym </p>
+			</div>
+		
+		</header>
+	</div>
+
+<main>
+<div id="settings"<p><h1>USTAWIENIA</h1></p><br>
+	<div class="changedata">
+		<div id="changeName"><label> Zmień imię <input type="text"name="changeName"</input></label></div>
+		<div id="changeSurname"><label> Zmień nazwisko <input type="text"name="changeSurname"</input></label></div>
+		<div id="changePassword"><label> Zmień hasło <input type="text"name="changePassword"</input></label></div>
+		<div id="changeEmail"><label> Zmień email <input type="email"name="changeEmail"</input></label></div>
+		<div><input type="submit" value="Zmień"></div>
+	</div>
+	<div id="edit">
+		<div id="editIncomesContainer">
+				<label for="edycjaPrzychodów"> Dodaj, usuń lub edytuj kategorie przychodów </label>
+					<div style="margin-top:10px;">
+						<select id="edycjaPrzychodow" name="edycjaPrzychodow[]">
+							<option value="pw"selected>Wynagrodzenie</option>
+							<option value="wob" >Odsetki bankowe</option>
+							<option value="wsa">Sprzedaż na allegro</option>
+							<option value="wi">Inne</option>
+						</select>
+					</div>
+					<div class="incomeDecision">
+						<input type="submit" value="Dodaj">
+						<input type="submit" value="Usuń">
+						<input type="submit" value="Edytuj">
+					</div>
+		</div>
+	<div id="editExpencesContainer">	
+		<label for="edycjaWydatkow"> Dodaj, usuń lub edytuj kategorie wydatków </label>
+		<div style="margin-top:10px;">
+			<select id="edycjaWydatkow" name="edycjaWydatkow[]">
+				<option value="wj"selected>Jedzenie</option>
+				<option value="wm" >Mieszkanie</option>
+				<option value="wt">Transport</option>
+				<option value="wte">Telekomunikacja</option>
+				<option value="woz">Opieka zdrowotna</option>
+				<option value="wu">Ubranie</option>
+				<option value="wh">Higiena</option>
+				<option value="wdz">Dzieci</option>
+				<option value="wr">Rozrywka</option>
+				<option value="ws">Szkolenia</option>
+				<option value="wk">Książki</option>
+				<option value="wo">Oszczędności</option>
+				<option value="we">Na złotą jesień, czyli emeryturę</option>
+				<option value="wsd">Spłata długów</option>
+				<option value="wd">Darowizna</option>
+				<option value="wiw">Inne wydatki</option>
+			</select>
+		</div>
+			<div class="expenceDecision">
+			<input type="submit" value="Dodaj">
+			<input type="submit" value="Usuń">
+			<input type="submit" value="Edytuj">
+		</div>
+	</div>
+	</div>	
+		<div class="eraseRecords">
+			<div id="eraseIncomes"><label for="usunPrzychody">Usuń ostatnie przychody</label><br>
+			<input type="submit" value="Usuń">
+			</div>
+			
+			<div id="eraseExpences">
+			<label for="usunWydatki">Usuń ostatnie wydatki</label><br>
+			<input type="submit" value="Usuń">
+			</div>
+		</div>
+</div>	
+
+	
+</main>
+	<footer>
+		<div class="foot">&copy; Wszelkie prawa zastrzeżone. Autor: Daniel Sokański  </div>
+	</footer>
+</body>
+</html>

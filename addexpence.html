@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Domowy Budżet</title>
+	<meta name="description" content="Aplikacja do zarządzania domowym budżetem">
+	<meta name="keywords" content="budżet, wydatek, przychód, bilans">
+	<meta name="author" content="Daniel Sokanski">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/fontello.css"type="text/css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+
+	<div class="container">
+		<header>
+			<div class="logo">
+				<h1> BUDŻET DOMOWY </h1>
+				<p> Kompleksowo zarządzaj swoim budżetem domowym </p>
+			</div>
+		
+		</header>
+	</div>
+<main>
+<article>
+<legend><h1>Dodaj wydatek</h1></legend>
+	<div class="value">
+		<label> Podaj kwotę <br><input type="text"name="kwota"</input></label>
+	</div>
+	<div class="date">
+		<label> Data  <br><input type="date" name="data"></label>
+	</div>
+	
+	<div class="payment">
+		<fieldset>
+			<legend> Sposób płatności</legend>
+			<div><label><input type="radio" value="got" name="got" checked> Gotówka </label></div>
+			<div><label><input type="radio" value="kd" name="kd"> Karta debetowa </label></div>
+			<div><label><input type="radio" value="kk" name="kk"> Karta kredytowa </label></div>
+		</fieldset>
+	</div>
+	</div>
+	
+	<div class="category">
+		<label for="kategoria"> Kategoria </label>
+		<div style="margin-top:10px;">
+			<select id="kategoria" name="kategoria[]">
+				<option value="j"selected>Jedzenie</option>
+				<option value="m" >Mieszkanie</option>
+				<option value="t">Transport</option>
+				<option value="te">Telekomunikacja</option>
+				<option value="oz">Opieka zdrowotna</option>
+				<option value="u">Ubranie</option>
+				<option value="h">Higiena</option>
+				<option value="dz">Dzieci</option>
+				<option value="r">Rozrywka</option>
+				<option value="s">Szkolenia</option>
+				<option value="k">Książki</option>
+				<option value="o">Oszczędności</option>
+				<option value="e">Na złotą jesień, czyli emeryturę</option>
+				<option value="sd">Spłata długów</option>
+				<option value="d">Darowizna</option>
+				<option value="iw">Inne wydatki</option>
+			</select>
+		</div>
+	</div>	
+		<div class="komentarz">
+					<div><label for="komentarz"> Komentarz </label><div>
+					<textarea name="komentarz" id="komentarz" rows="5" cols="50" ></textarea>
+				</div>
+	</div>
+	
+	<div class="row">
+			<input type="submit" value="Dodaj">
+			<input type="submit" value="Anuluj">
+	</div>
+</article>
+</main>
+	<footer>
+		<div class="foot">&copy; Wszelkie prawa zastrzeżone. Autor: Daniel Sokański  </div>
+	</footer>
+</body>
+</html>

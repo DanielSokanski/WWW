@@ -55,8 +55,8 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-logout:before { content: '\e800'; } /* '' */
-.icon-chart-bar:before { content: '\e801'; } /* '' */
-.icon-plus-1:before { content: '\e805'; } /* '' */
-.icon-minus-1:before { content: '\e806'; } /* '' */
-.icon-tasks:before { content: '\f0ae'; } /* '' */
+.icon-logout:before { content: '\e800';font-size: 76px; margin-top:20px; } /* '' */
+.icon-chart-bar:before { content: '\e801';font-size: 76px; margin-top:20px;  } /* '' */
+.icon-plus-1:before { content: '\e805';font-size: 76px; margin-top:20px;  } /* '' */
+.icon-minus-1:before { content: '\e806';font-size: 76px; margin-top:20px;  } /* '' */
+.icon-tasks:before { content: '\f0ae'; font-size: 76px; margin-top:20px; } /* '' */
